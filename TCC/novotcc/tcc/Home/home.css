@@ -1,0 +1,123 @@
+/* Estilos para a navbar */
+.navbar {
+    background: linear-gradient(to bottom, red, black); /* Degradê de vermelho para preto */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Valor alto para garantir que a barra de navegação fique acima de outros elementos */
+}
+
+/* Estilos para a foto de perfil */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Estilos para os links da navbar */
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+/* Estilos para o conteúdo da página */
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    font-size: 36px;
+}
+/* Estilos para o menu dropdown */
+.menu-dropdown {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.menu-dropdown a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+/* Estilos para mostrar o menu quando a classe "show-menu" está presente */
+.menu-dropdown.show-menu {
+    display: block;
+}
+.menu-icon{
+    cursor: pointer;
+    order: 100;
+}
+/* Reset de estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o card */
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 450px; /* Ajuste a largura conforme necessário */
+    margin: 75px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para a imagem dentro do card */
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo para as informações do card */
+.card-info {
+    padding: 20px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.card a:hover {
+    background-color: #0056b3;
+}
+.card-container {
+    display: flex; /* Use flexbox para alinhar os cards lado a lado */
+    
+}
